@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+
+    background-color: #ff0000;
+    color: #ffffff;
+
+    position: fixed;
+    top: 0;
+    left: 254px;
+
+    width: calc(100% - 254px);
+    height: 64px;
+}

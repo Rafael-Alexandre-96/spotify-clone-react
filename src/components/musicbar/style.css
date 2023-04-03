@@ -1,0 +1,131 @@
+.musicbar {
+    display: flex;
+
+    background-color: #181818;
+    color: #ffffff;
+    border-top: 1px solid #242424;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 91px;
+
+    padding: 16px;
+}
+
+.musicbar>div {
+    flex: 1;
+}
+
+.music-cover {
+    display: flex;
+    align-items: center;
+    min-width: 254px;
+}
+
+.music-cover .cover {
+    border: 1px solid green;
+    background-color: green;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+
+    margin-right: 8px;
+}
+
+.music-cover .title {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.music-cover .title:hover, .music-cover .artist:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.music-cover .artist {
+    cursor: pointer;;
+    font-size: 11px;
+    color: #B3B3B3;
+}
+
+.music-cover .data {
+    word-wrap: none;
+}
+
+.music-cover .menu {
+    position: relative;
+    min-width: 64px;
+}
+
+.music-cover svg {
+    box-sizing: content-box;
+    font-size: 16px;
+    padding: 6px;
+    color: #B3B3B3;
+}
+
+.music-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.music-player>* {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.music-player svg {
+    box-sizing: content-box;
+    font-size: 18px;
+    padding: 2px 8px;
+    color: #B3B3B3;
+}
+
+.player-track svg:nth-child(2), .player-track svg:nth-child(4) {
+    font-size: 32px;
+}
+
+.player-track svg:nth-child(3) {
+    color: white;
+    font-size: 36px;
+}
+
+.player-track svg:nth-child(3):hover {
+    transform: scale(1.1);
+}
+
+.music-track p {
+    color: #b3b3b3;
+    font-size: 12px;
+    margin: 3px;
+}
+
+.music-volume {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.music-volume .slider {
+    width: 98px;
+}
+
+.music-volume svg {
+    box-sizing: content-box;
+    font-size: 20px;
+    padding: 6px;
+    color: #B3B3B3;
+}
+
+.music-volume svg:hover, .music-cover svg:hover, .music-player svg:hover {
+    color: #ffffff;
+}
